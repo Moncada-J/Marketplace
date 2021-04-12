@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/categories" method="POST">
+    <form id="new-form" action="/categories" method="POST">
         <h2>Join Marketplace as a seller?</h2>
         <div class="form-container">
              Full Name: <input type="text" class="name" autocomplete="name">
@@ -17,10 +17,29 @@
             <br>
             Produce Type: 
             <select name="variety" class="variety">
-            <option value="Fruits">Fruit</option>
-            <option value="Vegetable">Vegetable</option>
+            <option name="fruits" value="Fruits">Fruit</option>
+            <option name="vegetables" value="Vegetable">Vegetable</option>
             </select>
             Produce Name: <input type="text" class="custom-item" autocomplete="none">
+            <br>
+            Produce Quantity: 
+            <select name="quantity" class="s-quantity">
+                <option name="min" value="1">1</option>
+                <option  value="2">2</option>
+                <option  value="3">3</option>
+                <option  value="4">4</option>
+                <option  value="5">5</option>
+                <option  value="6">6</option>
+                <option  value="7">7</option>
+                <option  value="8">8</option>
+                <option  value="9">9</option>
+                <option name="max" value="10">10</option>
+            </select>
+            Produce Price:
+            <select name="price" class="s-price">
+                <option value="min">$5/lb</option>
+                <option value="max">$7/lb</option>
+            </select>
             <br>
             I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
             <br>
