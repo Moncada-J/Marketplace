@@ -1,9 +1,9 @@
 const Category = require('../models/category');
 
 module.exports = {
-    index,
-    show, 
+    index, 
     new: newListing,
+    show,
     create, 
 };
 
@@ -13,16 +13,18 @@ function index(req, res) {
         res.render('categories/index', {title: "My Categories", categories});
     });
 }
+function newListing(req, res, next) {
+    // console.log(testNewListing);
+    res.render('categories/new', {title:"Create Listing"});
+}
 
-function show(req, res) {
+
+function show(req, res, next) {
     Category.findById(req.params.id, function (err, category) {
         res.render("categories/show", {category});
     });
 }
 
-function newListing(req, res) {
-    res.render('categories/new', {title:"Create Listing"});
-}
 
 function create(req, res) {
     const listing = new Listing(req.body);
