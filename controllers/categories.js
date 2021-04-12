@@ -28,6 +28,6 @@ function create(req, res) {
     const listing = new Listing(req.body);
     listing.save(function(err) {
         if(err) return res.redirect('/categories/new');
-        res.redirect(`/categories/${categorie._id}`);
+        res.redirect(`/categories/${categories._id}`);
     });
 }
