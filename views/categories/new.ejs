@@ -8,10 +8,26 @@
 </head>
 <body>
     <form action="/categories" method="POST">
-        <select name="variety" class="variety">
-           <option value="Fruits">Fruit</option>
-           <option value="Vegetable">Vegetable</option>
-        <input type="submit" class="sell-btn" value="Post Listing!">
-     </form>
+        <h2>Join Marketplace as a seller?</h2>
+        <div class="form-container">
+             Full Name: <input type="text" class="name" autocomplete="name">
+             <br>
+            Email Address: <input type="text" class="email" autocomplete="email">
+            Primary Phone: <input type="number" class="phone" autocomplete="tel-national">
+            <br>
+            Produce Type: 
+            <select name="variety" class="variety">
+            <option value="Fruits">Fruit</option>
+            <option value="Vegetable">Vegetable</option>
+            </select>
+            Produce Name: <input type="text" class="custom-item" autocomplete="none">
+            <br>
+            I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
+            <br>
+            I understand that I will start receiving weekly E-newsletters for Marketplace deals and offers. <input type="checkbox">
+            <br>
+            <input type="submit" class="sell-btn" value="Post Listing!">
+        </div>
+    </form>
 </body>
 </html>
