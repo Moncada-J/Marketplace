@@ -19,52 +19,29 @@
      Primary Phone: <input placeholder="1234567891" type="number" class="phone" autocomplete="tel-national">
     </label> <br>
 	<label>Fruit Type:
-	  <select name="fruits">
-        <option selected>Choose a Fruit</option>
-        <option value="null">None</option>
-	    <option value="Banana">Banana</option>
-	    <option value="Grape">Grapes</option>
-	    <option value="Plum">Plum</option>
-	    <option value="Watermelon">Watermelon</option>
-	  </select>
+	  <input type="text" class="custom-fruit" name="fruits" placeholder="Enter A Fruit">
 	</label><br>
     <label>Vegetable Type:
-	  <select name="vegetables">
-        <option selected>Choose a Vegetable</option>
-        <option value="null">None</option>
-	    <option value="Bell Pepper">Bell Pepper</option>
-	    <option value="Radish">Radish</option>
-	    <option value="Spinach">Spinach</option>
-	    <option value="Yam">Yam</option>
-	  </select>
+    <input type="text" class="custom-vegetable" name="vegetables" placeholder="Enter A Vegetable">
       </label><br>
-	<label>Quantity:
+	<label>Quantity per lb:
 	   <select name="quantity">
                 <option name="min" value="1">1</option>
                 <option  value="2">2</option>
                 <option  value="3">3</option>
                 <option  value="4">4</option>
-                <option  value="5">5</option>
-                <option  value="6">6</option>
-                <option  value="7">7</option>
-                <option  value="8">8</option>
-                <option  value="9">9</option>
-                <option name="max" value="10">10</option>
+                <option name="max" value="5">5</option>
         </select>
 	</label><br>
 	<label>Listing Price:
-	    <select name="price">
-                <option selected>$5/lb vegetable & $7/lb for fruit</option>
-                <option value="min">$5/lb</option>
-                <option value="max">$7/lb</option>
-        </select>
+      <input type="number" class="custom-price" name="price" placeholder="Listing Price">
     <br>
     I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
     <br>
      I understand that I will start receiving weekly E-newsletters for Marketplace deals and offers. <input type="checkbox">
     <br>
 	</label><br>
-	<input type="submit" value="Add Crop">
+	<input type="submit" value="Submit">
 </form>
 </body>
 </html>

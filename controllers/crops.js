@@ -6,7 +6,7 @@ module.exports = {
   create,
 };
 
-function index (req, res) {
+function index(req, res) {
     Crop.find({}, function (err, crops) {
         console.log(crops);
         res.render('crops/index', {crops})
