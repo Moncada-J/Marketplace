@@ -19,11 +19,11 @@ const detailsSchema = new Schema({
 const cropSchema = new Schema({
   fruits: {
     type: String,
-    enum: ["Apples", "Bananas", "Mangos", "Oranges", "Pineapple"],
+    // enum: ["Apples", "Bananas", "Mangos", "Oranges", "Pineapple"],
   },
   vegetables: {
     type: String,
-    enum: ["Artichoke", "Broccoli", "Carrots", "Potatoes", "Tomatoes"],
+    // enum: ["Artichoke", "Broccoli", "Carrots", "Potatoes", "Tomatoes"],
   },
   details: [detailsSchema],
 });
