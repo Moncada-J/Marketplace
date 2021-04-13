@@ -5,6 +5,7 @@ const cropsCtrl = require('../controllers/crops');
 router.get("/", cropsCtrl.index);
 router.get("/new", cropsCtrl.new);
 router.post("/", cropsCtrl.create);
+// router.post("/crops/:id/details", detailsCtrl.create);
 // router.get("/:id", cropsCtrl.show);
 
 

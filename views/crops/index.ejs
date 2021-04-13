@@ -16,7 +16,7 @@
               <select name="price">
                   <option value="5">$5/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span class="quantity-box">Current Availability (10)</span>   
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Bananas
@@ -94,6 +94,7 @@
     <table>
         <thead>
             <tr>
+                <th>Name</th>
                 <th>Fruits</th>
                 <th>Vegetables</th>
                 <th>Quantity</th>
@@ -103,11 +104,12 @@
         <tbody>
             <% crops.forEach(function(c) { %>
                 <tr>
+                    <td><%= c.name %> </td>
                     <td><%= c.fruits %></td>
                     <td><%= c.vegetables %></td>
                     <td><%= c.quantity %> </td>
                     <td><%= c.price %> </td>
-                    <td><a href="/crops/<%=c._id %>">Selection</a></td>
+                    <td><a href="/crops/<%=c._id %>">Details</a></td>
                 </tr>
             <% }); %>
         </tbody>

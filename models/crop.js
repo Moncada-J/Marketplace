@@ -3,10 +3,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const detailsSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
   quantity: {
     type: Number,
     min: 1,
-    max: 10,
+    max: 5,
   },
   price: {
     type: Number,
@@ -17,15 +21,20 @@ const detailsSchema = new Schema({
 });
 
 const cropSchema = new Schema({
-  fruits: {
+
+  cropType: {
     type: String,
-    // enum: ["Apples", "Bananas", "Mangos", "Oranges", "Pineapple"],
+    enum: ["Fruits","Vegetables"],
+  // }
+  // fruits: {
+  //   type: String,
+  //   // enum: ["Apples", "Bananas", "Mangos", "Oranges", "Pineapple"],
+  // },
+  // vegetables: {
+  //   type: String,
+  //   // enum: ["Artichoke", "Broccoli", "Carrots", "Potatoes", "Tomatoes"],
   },
-  vegetables: {
-    type: String,
-    // enum: ["Artichoke", "Broccoli", "Carrots", "Potatoes", "Tomatoes"],
-  },
-  details: [detailsSchema],
+  details: detailsSchema,
 });
 
 

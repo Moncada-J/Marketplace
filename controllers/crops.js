@@ -16,6 +16,7 @@ function index(req, res) {
 function newListing(req, res) {
   res.render("crops/new")
 }
+
 function create(req, res) {
     const crop = new Crop(req.body);
     crop.save(function(err) {
