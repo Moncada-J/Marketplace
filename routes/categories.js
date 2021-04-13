@@ -6,6 +6,6 @@ router.get("/", categoriesCtrl.index);
 router.post("/", categoriesCtrl.create);
 router.get("/new", categoriesCtrl.new);
 router.get("/:id", categoriesCtrl.show);
-
+// router.put("/categories/:id", categoriesCtrl.addItem);
 
 module.exports = router;
