@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+<h2>Enter a new item listing</h2>
+<form action="/crops" method="POST">
+    <label>
+         Full Name: <input placeholder="Example: John Doe" type="text" class="name" autocomplete="name">
+    </label><br>
+     <label>
+     Email Address: <input placeholder="Example@email.com" type="text" class="email" autocomplete="email">
+     </label><br>
+    <label>
+     Primary Phone: <input placeholder="1234567891" type="number" class="phone" autocomplete="tel-national">
+    </label> <br>
+	<label>Fruit Type:
+	  <select name="fruits">
+        <option selected>Choose a Fruit</option>
+        <option value="null">None</option>
+	    <option value="Banana">Banana</option>
+	    <option value="Grape">Grapes</option>
+	    <option value="Plum">Plum</option>
+	    <option value="Watermelon">Watermelon</option>
+	  </select>
+	</label><br>
+    <label>Vegetable Type:
+	  <select name="vegetables">
+        <option selected>Choose a Vegetable</option>
+        <option value="null">None</option>
+	    <option value="Bell Pepper">Bell Pepper</option>
+	    <option value="Radish">Radish</option>
+	    <option value="Spinach">Spinach</option>
+	    <option value="Yam">Yam</option>
+	  </select>
+      </label><br>
+	<label>Quantity:
+	   <select name="quantity">
+                <option name="min" value="1">1</option>
+                <option  value="2">2</option>
+                <option  value="3">3</option>
+                <option  value="4">4</option>
+                <option  value="5">5</option>
+                <option  value="6">6</option>
+                <option  value="7">7</option>
+                <option  value="8">8</option>
+                <option  value="9">9</option>
+                <option name="max" value="10">10</option>
+        </select>
+	</label><br>
+	<label>Listing Price:
+	    <select name="price">
+                <option selected>$5/lb vegetable & $7/lb for fruit</option>
+                <option value="min">$5/lb</option>
+                <option value="max">$7/lb</option>
+        </select>
+    <br>
+    I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
+    <br>
+     I understand that I will start receiving weekly E-newsletters for Marketplace deals and offers. <input type="checkbox">
+    <br>
+	</label><br>
+	<input type="submit" value="Add Crop">
+</form>
+</body>
+</html>
