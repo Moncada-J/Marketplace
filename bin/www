@@ -5,7 +5,7 @@
  */
 
 var app = require('../server');
-var debug = require('debug')('marketplace:server');
+var debug = require('debug')('marketplace-app:server');//BUG? marketplace repo name changed?
 var http = require('http');
 
 /**
