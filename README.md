@@ -9,7 +9,7 @@ where we can provide an interconnection for those involved.
 
 
 ## Our ER Model 
-<img src="https://i.imgur.com/kY28o3c.png">
+<img src="https://i.imgur.com/FrKq9Oc.png">
 
 ## Wireframe
 <img src="https://i.imgur.com/Wqa2vTB.png">
