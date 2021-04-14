@@ -18,13 +18,16 @@
     <label>
      Primary Phone: <input placeholder="1234567891" type="number" class="phone" autocomplete="tel-national">
     </label> <br>
-	<label>Fruit Type:
-	  <input type="text" class="custom-fruit" name="fruits" placeholder="Enter A Fruit">
+  <label>Type of Item:
+    <select name="cropType">
+              <option name="Fruits" value="Fruits">Fruits</option>
+              <option name="Vegetables" value="Vegetables">Vegetables</option>
+    </select>
+  </label>
+	<label>Item Type:
+	  <input type="text" class="custom-fruit" name="name" placeholder="Enter an Item">
 	</label><br>
-    <label>Vegetable Type:
-    <input type="text" class="custom-vegetable" name="vegetables" placeholder="Enter A Vegetable">
-      </label><br>
-	<label>Quantity per lb:
+	<label>Quantity:
 	   <select name="quantity">
                 <option name="min" value="1">1</option>
                 <option  value="2">2</option>
@@ -33,7 +36,7 @@
                 <option name="max" value="5">5</option>
         </select>
 	</label><br>
-	<label>Listing Price:
+	<label>Listing Price per lb:
       <input type="number" class="custom-price" name="price" placeholder="Listing Price">
     <br>
     I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
