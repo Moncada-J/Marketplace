@@ -1,4 +1,4 @@
-body {
+.main-index {
   background-image: url('https://i.imgur.com/LxAREBv.jpg');
   background-repeat: no-repeat;
   background-size: auto;
@@ -28,7 +28,7 @@ body {
 .app-title {
   color:rgb(120, 200, 96);
 }
-.index-lwr-contain {
+.main-index .lwr-contain {
   margin-top: 180px;
   margin-left: 100px;
   background-color:#202529;
