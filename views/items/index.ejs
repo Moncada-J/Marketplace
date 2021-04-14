@@ -108,6 +108,7 @@
                     <td><%= i.quantity %> </td>
                     <td><%= i.price %> </td>
                     <td><a href="/items/<%=i._id %>">Details</a></td>
+                    <td><form action="/items/<%=i._id %>?_method=DELETE" class="delete-form" method="POST"><button type="submit">↪</button></form></td>
                 </tr>
             <% }); %>
         </tbody>
