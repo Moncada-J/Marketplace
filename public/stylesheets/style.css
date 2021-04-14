@@ -6,3 +6,47 @@ body {
 a {
   color: #00B7FF;
 }
+
+.index-pg h1, p {
+  text-align: center;
+}
+
+.itemsIndex-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color:rgb(100, 113, 172);
+}
+
+.col {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.col input {
+margin-right: 20px;
+margin-top: 40px;
+}
+
+thead {
+  background-color: rgb(116, 112, 112);
+  width: 350px;
+}
+.list-title h4 {
+  text-align: center;
+  font-size: 19px;
+  color: rgb(242, 236, 236);
+}
+
+#rec-add {
+  text-align: center;
+  color: rgb(80, 66, 130);
+  font-size: 28px;
+}
+
+tr td {
+  color: rgb(92, 108, 193);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500px;
+}

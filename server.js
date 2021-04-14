@@ -3,11 +3,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const methodOverride = require("method-override");
+
 require('dotenv').config();
+require('./config/database');
 
 
-var indexRouter = require('./routes/index');
-var categoryRouter = require('./routes/categories');
+const indexRouter = require('./routes/index');
+const itemRouter = require('./routes/items');
+const reviewsRouter = require('./routes/reviews');
 
 var app = express();
 
@@ -20,9 +24,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride("_method"));
 
 app.use('/', indexRouter);
-app.use('/categories', categoryRouter);
+app.use('/items', itemRouter);
+app.use('/', reviewsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

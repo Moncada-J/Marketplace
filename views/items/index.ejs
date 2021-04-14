@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Marketplace</title>
+</head>
+<body class="itemsIndex-container">
+    <h1>Fresh Produce</h1>
+    <p>Here are our fruits and vegetables for display!</p>
+    <h3>Fruits</h3>
+    <div class="container fruits">
+      <div class="row row-cols-auto">
+          <div class="col">Apples
+              <select name="price">
+                  <option value="5">$5/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">Current Availability (10)</span>   
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Bananas
+              <select name="price">
+                  <option value="5">$5/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Mangos
+              <select name="price">
+                  <option value="5">$5/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Oranges
+              <select name="price">
+                  <option value="5">$5/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Pineapples
+              <select name="price">
+                  <option value="5">$5/lb</option>
+              </select>
+               <span name="quantity" class="quantity-box">10</span>
+              <input type="submit" value="Purchase">
+          </div>
+      </div>
+    </div>
+    <h3>Vegetables</h3>
+    <div class="container vegetables">
+      <div class="row row-cols-auto">
+          <div class="col">Artichoke
+              <select name="price">
+                  <option value="7">$7/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Broccoli
+              <select name="price">
+                  <option value="7">$7/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Carrots
+              <select name="price">
+                  <option value="7">$7/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Potatoes
+              <select name="price">
+                  <option value="7">$7/lb</option>
+              </select>
+              <span name="quantity" class="quantity-box">10</span>
+               <input type="submit" value="Purchase">
+          </div>
+          <div class="col">Tomatoes
+              <select name="price">
+                  <option value="7">$7/lb</option>
+              </select>
+               <span name="quantity" class="quantity-box">10</span>
+              <input type="submit" value="Purchase">
+          </div>
+      </div>
+    </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th class="list-title col"><h4>Produce Type</h4></th>
+                <th class="list-title col"><h4>Produce Name</h4></th>
+                <th class="list-title col"><h4>Stock Availability</h4></th>
+                <th class="list-title col"><h4>Pricing (/ LB) </h4></th>
+            </tr>
+        </thead>
+        <tbody>
+            <h2 id="rec-add">Recently Added</h2>
+            <% items.forEach(function(i) { %>
+                <tr>
+                    <td><%= i.itemType %></td>
+                    <td><%= i.name %> </td>
+                    <td><%= i.quantity %> </td>
+                    <td><%= i.price %> </td>
+                    <td><a href="/items/<%=i._id %>">Details</a></td>
+                    <td><form action="/items/<%=i._id %>?_method=DELETE" class="delete-form" method="POST"><button type="submit">↪</button></form></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

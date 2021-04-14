@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+     <section id="show-page">
+       <h2>Product Details</h2>
+        <div>Produce Type: </div>
+        <div><%= item.itemType %></div>
+        <div>Produce Name: </div>
+        <div><%= item.name%></div>
+        <div>Quantity: </div>
+        <div><%= item.quantity %></div>
+        <div>Price: </div>
+        <div><%= item.price%></div>
+    </section>
+    <h3>Update Product Info</h3>
+    <form id="new-form" action="/items/<%= item._id %>?_method=PUT" method="POST">
+      <label>Quantity:
+        <select name="quantity">
+                   <option name="min" value="1">1</option>
+                   <option  value="2">2</option>
+                   <option  value="3">3</option>
+                   <option  value="4">4</option>
+                   <option name="max" value="5">5</option>
+           </select>
+     </label><br>
+     <label>Listing Price per lb:
+         <input type="number" class="custom-price" name="price" placeholder="Listing Price">
+       <br>
+      <input type="submit" value="Update Product Info" />
+    </form>
+    <br><br>
+    <h3>Reviews</h3>
+    <form id="add-review-form" method="POST" action="/items/<%= item._id %>/reviews">
+    <label>Review:</label>
+    <textarea name="content"></textarea>
+    <label>Rating:</label>
+    <select name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <input type="submit" value="Add Review">
+    </form> 
+
+    <% if(item.reviews.length) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Review</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% item.reviews.forEach(function(r){ %> 
+            <tr>
+              <td><%= r.createdAt.toLocaleDateString() %></td>
+              <td><%= r.content %></td>
+              <td><%= r.rating %></td>
+            </tr>
+            <% }); %> 
+        </tbody>
+      </table>
+        <% } else { %> 
+          <h5>No Reviews Yet</h5>
+        <% } %> 
+</body>
+</html>
