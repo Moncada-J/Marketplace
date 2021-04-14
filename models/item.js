@@ -25,8 +25,8 @@ const itemSchema = new Schema({
     price: {
       type: Number,
       required: true,
-      min: 5,
-      max: 7,
+      min: 1,
+      max: 99,
   }, 
   reviews:[reviewSchema],
 }, {
