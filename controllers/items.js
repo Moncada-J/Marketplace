@@ -6,6 +6,7 @@ module.exports = {
   create,
   delete: deleteListing,
   show,
+  update,
 };
 
 function index(req, res) {
@@ -41,4 +42,10 @@ function show(req, res) {
   Item.findById(req.params.id, function(err, item) {
     res.render('items/show', {title: 'Item Detail', item });
   });
+}
+
+function update(req, res){
+  Item.findByIdAndUpdate(req.params.id, req.body, function(err, item) {
+     res.redirect(`/items/${item._id}`);
+  })
 }

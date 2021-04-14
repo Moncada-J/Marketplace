@@ -18,6 +18,22 @@
         <div>Price: </div>
         <div><%= item.price%></div>
     </section>
+    <h3>Update Product Info</h3>
+    <form id="new-form" action="/items/<%= item._id %>?_method=PUT" method="POST">
+      <label>Quantity:
+        <select name="quantity">
+                   <option name="min" value="1">1</option>
+                   <option  value="2">2</option>
+                   <option  value="3">3</option>
+                   <option  value="4">4</option>
+                   <option name="max" value="5">5</option>
+           </select>
+     </label><br>
+     <label>Listing Price per lb:
+         <input type="number" class="custom-price" name="price" placeholder="Listing Price">
+       <br>
+      <input type="submit" value="Update Product Info" />
+    </form>
     <br><br><h3>Reviews</h3>
     <form id="add-review-form" method="POST" action="/items/<%= item._id %>/reviews">
     <label>Review:</label>
