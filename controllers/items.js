@@ -5,7 +5,7 @@ module.exports = {
   new: newListing,
   create,
   delete: deleteListing,
-  // show,
+  show,
 };
 
 function index(req, res) {
@@ -34,5 +34,11 @@ function deleteListing(req, res) {
     if(err) console.log('Error');
     console.log('Successfully deleted');
     res.redirect('/items')
+  });
+}
+
+function show(req, res) {
+  Item.findById(req.params.id, function(err, item) {
+    res.render('items/show', {title: 'Item Detail', item });
   });
 }
