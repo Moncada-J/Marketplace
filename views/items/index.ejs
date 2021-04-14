@@ -16,35 +16,35 @@
               <select name="price">
                   <option value="5">$5/lb</option>
               </select>
-              <span class="quantity-box">Current Availability (10)</span>   
+              <span name="quantity" class="quantity-box">Current Availability (10)</span>   
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Bananas
               <select name="price">
                   <option value="5">$5/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Mangos
               <select name="price">
                   <option value="5">$5/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Oranges
               <select name="price">
                   <option value="5">$5/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Pineapples
               <select name="price">
                   <option value="5">$5/lb</option>
               </select>
-               <span class="quantity-box">10</span>
+               <span name="quantity" class="quantity-box">10</span>
               <input type="submit" value="Purchase">
           </div>
       </div>
@@ -56,35 +56,35 @@
               <select name="price">
                   <option value="7">$7/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Broccoli
               <select name="price">
                   <option value="7">$7/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Carrots
               <select name="price">
                   <option value="7">$7/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Potatoes
               <select name="price">
                   <option value="7">$7/lb</option>
               </select>
-              <span class="quantity-box">10</span>
+              <span name="quantity" class="quantity-box">10</span>
                <input type="submit" value="Purchase">
           </div>
           <div class="col">Tomatoes
               <select name="price">
                   <option value="7">$7/lb</option>
               </select>
-               <span class="quantity-box">10</span>
+               <span name="quantity" class="quantity-box">10</span>
               <input type="submit" value="Purchase">
           </div>
       </div>
@@ -94,22 +94,20 @@
     <table>
         <thead>
             <tr>
+                <th>Item Type</th>
                 <th>Name</th>
-                <th>Fruits</th>
-                <th>Vegetables</th>
                 <th>Quantity</th>
                 <th>Price</th>
             </tr>
         </thead>
         <tbody>
-            <% crops.forEach(function(c) { %>
+            <% items.forEach(function(i) { %>
                 <tr>
-                    <td><%= c.name %> </td>
-                    <td><%= c.fruits %></td>
-                    <td><%= c.vegetables %></td>
-                    <td><%= c.quantity %> </td>
-                    <td><%= c.price %> </td>
-                    <td><a href="/crops/<%=c._id %>">Details</a></td>
+                    <td><%= i.itemType %></td>
+                    <td><%= i.name %> </td>
+                    <td><%= i.quantity %> </td>
+                    <td><%= i.price %> </td>
+                    <td><a href="/items/<%=i._id %>">Details</a></td>
                 </tr>
             <% }); %>
         </tbody>

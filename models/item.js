@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const cropSchema = new Schema({
-    cropType: {
+const itemSchema = new Schema({
+    itemType: {
       type: String,
     },  
     name: {
@@ -23,5 +23,5 @@ const cropSchema = new Schema({
   },
 });
 
-module.exports = mongoose.model("Crop", cropSchema);
+module.exports = mongoose.model("Item", itemSchema);
 
