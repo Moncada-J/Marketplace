@@ -4,11 +4,12 @@ module.exports = {
   index,
   new: newListing,
   create,
+  // show,
 };
 
 function index(req, res) {
     Crop.find({}, function (err, crops) {
-        console.log(crops);
+        // console.log(crops);
         res.render('crops/index', {crops})
     })
 }
@@ -20,7 +21,7 @@ function newListing(req, res) {
 function create(req, res) {
     const crop = new Crop(req.body);
     crop.save(function(err) {
-        console.log(crop);
+        // console.log(crop);
         if(err) return res.render("crops/new");
         // console.log(crop);
       })
