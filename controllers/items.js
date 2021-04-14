@@ -4,7 +4,7 @@ module.exports = {
   index,
   new: newListing,
   create,
-  delete: deleteListing
+  delete: deleteListing,
   // show,
 };
 
@@ -34,7 +34,5 @@ function deleteListing(req, res) {
     if(err) console.log('Error');
     console.log('Successfully deleted');
     res.redirect('/items')
-  })
+  });
 }
-
- 

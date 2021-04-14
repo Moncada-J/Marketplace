@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Marketplace</title>
 </head>
-<body>
+<body class="itemsIndex-container">
     <h1>Fresh Produce</h1>
     <p>Here are our fruits and vegetables for display!</p>
     <h3>Fruits</h3>
@@ -94,13 +95,14 @@
     <table>
         <thead>
             <tr>
-                <th>Item Type</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
+                <th class="list-title col"><h4>Produce Type</h4></th>
+                <th class="list-title col"><h4>Produce Name</h4></th>
+                <th class="list-title col"><h4>Stock Availability</h4></th>
+                <th class="list-title col"><h4>Pricing (/ LB) </h4></th>
             </tr>
         </thead>
         <tbody>
+            <h2 id="rec-add">Recently Added</h2>
             <% items.forEach(function(i) { %>
                 <tr>
                     <td><%= i.itemType %></td>
