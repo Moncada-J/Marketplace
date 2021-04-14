@@ -9,12 +9,12 @@ where we can provide an interconnection for those involved.
 
 
 ## Our ER Model 
-<img src="https://imgur.com/Wqa2vTB">
+<img src="https://i.imgur.com/kY28o3c.png">
 
 ## Wireframe
-<img src="https://imgur.com/Wqa2vTB">
-<img src="https://imgur.com/aqZq0Bw">
-<img src="https://imgur.com/xxtXgdq">
+<img src="https://i.imgur.com/Wqa2vTB.png">
+<img src="https://i.imgur.com/aqZq0Bw.png">
+<img src="https://i.imgur.com/xxtXgdq.png">
 
 ## Technologies Used
 - HTML
