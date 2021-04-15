@@ -125,3 +125,19 @@ tr td {
   font-weight: 500px;
 }
 
+.btn {
+  color: rgb(249, 244, 244);
+  background-color: #CA5E1C;
+  border: 3px rgb(99, 97, 97) solid;
+}
+.btn:hover {
+  background-color: white;
+  color: #c35612;
+  border: 3px rgb(99, 97, 97) solid;
+}
+
+.custom-footer {
+  background-color: #CA5E1C;
+  height: 80px;
+  font-size: 21px;
+}
