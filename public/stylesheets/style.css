@@ -153,7 +153,6 @@ a:visited {
   text-decoration: none;
 }
 
-
 table  {
   border-collapse: collapse;
   width: 100%;
@@ -173,16 +172,6 @@ tbody tr:nth-child(odd) {
 }
 
 
-
-
-/* 
-tr td {
-  color: rgb(92, 108, 193);
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500px;
-} */
-
 .btn {
   color: rgb(249, 244, 244);
   background-color: #CA5E1C;
@@ -198,4 +187,13 @@ tr td {
   background-color: #CA5E1C;
   height: 80px;
   font-size: 21px;
+}
+.alert h4 {
+  font-size: 40px;
+}
+.alert {
+  margin-top: 15%;
+  margin-left: 25%;
+  width: 600px;
+  text-align: center;
 }
