@@ -67,25 +67,31 @@
 }
 
 /* /ITEMS */
+
 .items-index {
-  background-color: rgb(152, 152, 148);
+  background-color: rgb(186, 186, 182);
 }
 .custom {
   background-color: hsl(23, 76%, 45%);
 }
+
+.items-index a {
+  font-size: 25px;
+  margin-left: 40px;
+}
 .navbar-brand h1 {
-  padding-bottom: 10px;
+padding-bottom: 10px;
 font-size: 52px;
 font-family: 'Berkshire Swash', cursive;
-margin-right: 40px;
-margin-left: 30px;
+margin-right: 50px;
+margin-left: 50px;
 color: rgb(244, 244, 243);
 }
 .store-icon {
   position: relative;
   top: 10px;
   font-size: 52px;
-  margin-right: 10px;
+  margin-right: 40px;
    color: rgb(249, 246, 245);
 }
 .items-index .nav-link {
@@ -110,21 +116,6 @@ color: rgb(244, 244, 243);
   color:rgb(100, 113, 172);
 }
 
-.col {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  padding: 30px;
-}
-
-.col input {
-margin-right: 20px;
-margin-top: 40px;
-}
-
-thead {
-  background-color: rgb(116, 112, 112);
-  width: 350px;
-}
 .list-title h4 {
   text-align: center;
   font-size: 19px;
@@ -132,17 +123,65 @@ thead {
 }
 
 .data-header {
+  margin-top: 20px;
   text-align: center;
-  color: rgb(243, 242, 247);
-  font-size: 28px;
+  color: rgb(40, 40, 40);
+  font-size: 32px;
+  font-family: 'Zilla Slab Highlight';
+
 }
 
+.display-header {
+  font-family: 'Zilla Slab Highlight';
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 34px;
+  color: rgb(40, 40, 40);
+}
+
+table a {
+  color: rgb(17, 17, 16);
+  background-color: rgb(248, 245, 245);
+  border: 3px solid rgb(58, 80, 118);
+   text-decoration: none;
+   text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+table  {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(111, 109, 108);
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 2px double #2a2928;
+  color: rgb(251, 249, 249);
+  text-align: center;
+}
+tbody tr:nth-child(odd) {
+  background: rgb(200, 92, 26);
+}
+
+
+
+
+/* 
 tr td {
   color: rgb(92, 108, 193);
   text-align: center;
   font-size: 18px;
   font-weight: 500px;
-}
+} */
 
 .btn {
   color: rgb(249, 244, 244);
@@ -150,7 +189,7 @@ tr td {
   border: 3px rgb(99, 97, 97) solid;
 }
 .btn:hover {
-  background-color: white;
+  background-color: rgb(239, 233, 233);
   color: #c35612;
   border: 3px rgb(99, 97, 97) solid;
 }
