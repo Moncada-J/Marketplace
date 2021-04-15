@@ -69,7 +69,7 @@
 /* /ITEMS */
 
 .items-index {
-  background-color: rgb(186, 186, 182);
+  background-color: rgb(216, 216, 205);
 }
 .custom {
   background-color: hsl(23, 76%, 45%);
@@ -125,7 +125,7 @@ color: rgb(244, 244, 243);
 .data-header {
   margin-top: 20px;
   text-align: center;
-  color: rgb(40, 40, 40);
+  color: rgb(7, 0, 0);
   font-size: 32px;
   font-family: 'Francois One', sans-serif;
 
@@ -189,11 +189,45 @@ tbody tr:nth-child(odd) {
   font-size: 21px;
 }
 
+/*  /SHOW.EJS  */
+.show-page {
+  background: url(https://i.imgur.com/E4EewaU.jpg);
+}
+.alert h4 {
+  font-size: 42px;
+}
 .alert {
-  margin-top: 15%;
+  margin-top: 10px;
   margin-left: 25%;
   width: 600px;
   text-align: center;
+}
+.produce-update-title {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(72, 41, 41);
+}
+.show-form {
+  text-align: center;
+}
+label {
+  margin-top: 15px;
+}
+.show-page input {
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color:#a7a5a5;
+}
+.show-page table {
+  border-radius: 10px;
+}
+
+.show-page tbody tr:nth-child(odd) {
+  background-color: #bf727a;
+}
+.rating {
+  position: relative;
+  left: 45px;
 }
 
 /* NEW PAGE /ITEMS/NEW */
