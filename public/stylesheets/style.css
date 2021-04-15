@@ -153,7 +153,6 @@ a:visited {
   text-decoration: none;
 }
 
-
 table  {
   border-collapse: collapse;
   width: 100%;
@@ -190,68 +189,9 @@ tbody tr:nth-child(odd) {
   font-size: 21px;
 }
 
-
-/* NEW PAGE /ITEMS/NEW */
-
-.newBody {
-  background-image: url("https://i.imgur.com/U5fCzkQ.jpg");
-}
-
-.newContainer {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 600;
-  display: flex;
+.alert {
+  margin-top: 15%;
+  margin-left: 25%;
   width: 600px;
-  height: 675px;
-  margin-top: 8%;
-  margin-left: 35%;
-  margin-bottom: 8%;
-  justify-content: center;
-  background-color:#CA5E1C;
-  border-radius: 25px;
-  color: white;
-}
-
-.newForm {
   text-align: center;
-  margin-top: 30px;
-}
-
-.newContainer input {
-  margin-top: 20px;
-}
-
-.newContainer select {
-  margin-top: 20px;
-}
-
-.custom-price {
-  width: 100px;
-}
-
-.newForm span {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-}
-
-.newContainer h2 {
-  font-size: 40px;
-  font-family: 'Berkshire Swash';
-  text-shadow: 
-  -2px -2px 0 #000, 
-   2px -2px 0 #000, 
-  -2px 2px 0 #000, 
-   2px 2px 0 #000;
-   background-color: #4e4c4c;
-   height: 80px;
-   padding-top: 15px;
-}
-
-.btnSubmit {
-  position: relative;
-  top: -30px;
-  padding: 15px;
-  width: 20em;
 }

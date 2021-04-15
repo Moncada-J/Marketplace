@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Listing</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Document</title>
   </head>
-  <body class="newBody">
-    <div class="newContainer">
-      <form action="/items" method="POST" class="newForm">
-        <h2>Enter a new item listing</h2>
-              <label>
-                  Full Name: <input placeholder="Example: John Doe" type="text" class="name" autocomplete="name">
-              </label><br>
-              <label>
-              Email Address: <input placeholder="Example@email.com" type="text" class="email" autocomplete="email">
-              </label><br>
-              <label>
-              Primary Phone: <input placeholder="1234567891" type="number" class="phone" autocomplete="tel-national">
-              </label> <br>
-            <label>Type of Item:
-              <select name="itemType">
-                        <option value="Fruits">Fruits</option>
-                        <option value="Vegetables">Vegetables</option>
-              </select>
-            </label>
-            <label>Item Type:
-              <input type="text" class="custom-item" name="name" placeholder="Enter an Item">
-            </label><br>
-            <label>Quantity:
-              <select name="quantity">
-                          <option name="min" value="1">1</option>
-                          <option  value="2">2</option>
-                          <option  value="3">3</option>
-                          <option  value="4">4</option>
-                          <option name="max" value="5">5</option>
-                  </select>
-            </label><br>
-            <label>Listing Price per lb:
-                <input type="number" class="custom-price" name="price" min="1" max ="99" placeholder="Listing Price">
-              <br>
-                <span class="terms">
-              I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
-              </span>
-              <span class="spam">
-              I understand that I will start receiving weekly E-newsletters for Marketplace deals and offers. <input type="checkbox">
-                </span>
-              <br>
-            </label><br>
-            <input type="submit" value="Submit" class="btnSubmit">
-          </form>
-    </div>
+  <body>
+<h2>Enter a new item listing</h2>
+<form action="/items" method="POST">
+    <label>
+         Full Name: <input placeholder="Example: John Doe" type="text" class="name" autocomplete="name">
+    </label><br>
+     <label>
+     Email Address: <input placeholder="Example@email.com" type="text" class="email" autocomplete="email">
+     </label><br>
+    <label>
+     Primary Phone: <input placeholder="1234567891" type="number" class="phone" autocomplete="tel-national">
+    </label> <br>
+  <label>Type of Item:
+    <select name="itemType">
+              <option value="Fruits">Fruits</option>
+              <option value="Vegetables">Vegetables</option>
+    </select>
+  </label>
+	<label>Item Type:
+	  <input type="text" class="custom-item" name="name" placeholder="Enter an Item">
+	</label><br>
+	<label>Quantity:
+	   <select name="quantity">
+                <option name="min" value="1">1</option>
+                <option  value="2">2</option>
+                <option  value="3">3</option>
+                <option  value="4">4</option>
+                <option name="max" value="5">5</option>
+        </select>
+	</label><br>
+	<label>Listing Price per lb:
+      <input type="number" class="custom-price" name="price" min="1" max ="99" placeholder="Listing Price">
+    <br>
+    I have read the terms and conditions for listing a product to the Marketplace App. <input type="checkbox">
+    <br>
+     I understand that I will start receiving weekly E-newsletters for Marketplace deals and offers. <input type="checkbox">
+    <br>
+	</label><br>
+	<input type="submit" value="Submit">
+</form>
 </body>
 </html>
