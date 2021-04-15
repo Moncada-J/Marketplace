@@ -1,50 +1,5 @@
 /* /LANDING */
 
-.main-index {
-  background-image: url('https://i.imgur.com/LxAREBv.jpg');
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.navbar a {
-  color: #3D4A3D;
-  /* border: 2px solid #8d9a37; */
-  margin-right: 80px;
-  margin-top: 20px;
-  font-size: 18px;
-}
-.nav-link:hover {
-    color: rgb(246, 246, 246);
-}
- nav img {
-  margin-left: 50px;
-  margin-right: 300px;
-}
-
-.navbar {
-  margin: 15px;
-}
-
-.main-index .lwr-contain {
-  margin-top: 180px;
-  margin-left: 100px;
-  background-color:#202529;
-  border: 3px solid #e4dfdc;
-  box-shadow: 11px 12px 10px -2px rgba(65, 65, 64, 0.93);
--webkit-box-shadow: 11px 10px 10px -2px rgba(116, 114, 112, 0.93);
--moz-box-shadow: 11px 16px 10px -2px rgba(65, 65, 64, 0.93);
-}
-#index-blurb  {
-  color: #8d9a37;
-  margin-bottom: 30px;
-  margin-right: 40px;
-}
-#index-desc {
-  color: white;
-}
-#index-desc strong {
-  color: yellow;
-}
 
 
 /* /ITEMS */
