@@ -6,7 +6,9 @@ it's important to still have a sense of human connection and community. That's w
 where we can provide an interconnection for those involved.
 
 ## Screenshots
-
+<img src="https://i.imgur.com/m8InygO.png">
+<img src="https://i.imgur.com/KxJu2WR.png">
+<img src="https://i.imgur.com/AD3opJh.png">
 
 ## Our ER Model 
 <img src="https://i.imgur.com/FrKq9Oc.png">
