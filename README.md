@@ -5,6 +5,9 @@ buy produce from all kinds of fruits and vegetables. With the advancement of tec
 it's important to still have a sense of human connection and community. That's why we decided to build this platform 
 where we can provide an interconnection for those involved.
 
+Check it out here!
+https://marketplaces-app.herokuapp.com/
+
 ## Screenshots
 <img src="https://i.imgur.com/m8InygO.png">
 <img src="https://i.imgur.com/KxJu2WR.png">
