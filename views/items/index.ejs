@@ -11,7 +11,8 @@
    <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-   <title>Marketplace</title>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+<title>Produce Inventory</title>
 </head>
 <body class="items-index">
     <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
@@ -34,7 +35,7 @@ shopping_cart
     </div>
   </nav>
     <header class="data-header">
-      <h1>Recently Added Produce</h1>
+      <h1>Recently Added</h1>
     </header>
     <div class="data-container">
         <table>
@@ -44,6 +45,8 @@ shopping_cart
                 <th class="list-title col"><h4>Produce Name</h4></th>
                 <th class="list-title col"><h4>Stock Availability</h4></th>
                 <th class="list-title col"><h4>Pricing ($1/ LB) </h4></th>
+                 <th class="list-title col"><h4>Details</h4></th>
+                  <th class="list-title col"><h4>Remove</h4></th>
             </tr>
         </thead>
         <tbody>
@@ -53,20 +56,13 @@ shopping_cart
                     <td><%= i.name %> </td>
                     <td><%= i.quantity %> </td>
                     <td><%= i.price %> </td>
-                    <td><a href="/items/<%=i._id %>">Details</a></td>
-                    <td><form action="/items/<%=i._id %>?_method=DELETE" class="delete-form" method="POST"><button type="submit">↪</button></form></td>
+                    <td><a href="/items/<%=i._id %>">Info</a></td>
+                    <td><form action="/items/<%=i._id %>?_method=DELETE" class="delete-form" method="POST"><button type="submit">X</button></form></td>
                 </tr>
             <% }); %>
         </tbody>
     </table>
-    <!-- Jumbotron Header -->
-      <!-- <header class="jumbotron my-4">
-      <h1 class="display-3">Recently Added Items</h1>
-      <p class="lead"></p>
-      <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
-    </header> -->
-
-    <!-- Page Features -->
+    <h2 class="display-header">Fruit Display</h2>
     <div class="row text-center">
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
@@ -118,6 +114,7 @@ shopping_cart
       </div>
     </div>
   </div>
+  <h2 class="display-header">Fruit Display</h2>
     <div class="row text-center">
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
