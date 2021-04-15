@@ -1,9 +1,9 @@
 # CropMart
 
 CropMart is an online marketplace that connects a community, their gardens and their local farms. Where anyone can sell or 
-buy produce from all kinds of fruits and vegetables. With the advancement of technology and automation, we believe
-it's important to still have a sense of human connection and community. That's why we decided to build this platform 
-where we can provide an interconnection for those involved.
+buy produce from all kinds of fruits and vegetables and see the inventory online both within their local radius or online. 
+With the advancement of technology and automation, we believe it's important to still have a sense of human connection and
+community. That's why we decided to build this platform where we can provide an interconnection for those involved.
 
 Check it out here!
 https://marketplaces-app.herokuapp.com/
