@@ -1,6 +1,70 @@
 /* /LANDING */
-
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.main-index-page {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1498579397066-22750a3cb424?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  max-width: 500px;
+  margin: auto;
+}
+.container {
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(202, 94, 28, .60);
+  padding-bottom: 30px;
+  border-radius: 25px;
+  width: 550px;
+  margin-top: 60%;
+  -webkit-box-shadow: 1px 1px 9px 6px white, 1px 1px 9px 6px white; 
+  box-shadow: 1px 1px 9px 6px white, 1px 1px 9px 6px white;
+}
+.container h4 {
+  margin-top: 40px;
+  position: relative;
+  top: 10px;
+}
+.container p {
+  margin-top: 40px;
+  position: relative;
+  top: -10px;
+}
+.primary-title {
+  color:#ffffff;
+  text-shadow: 
+  -2px -2px 0 #000, 
+  2px -2px 0 #000, 
+  -2px 2px 0 #000, 
+  2px 2px 0 #000;
+  font-family: 'Berkshire Swash';
+  font-size: 100px;
+  margin-top: 50%;
+  position: relative;
+  top: 30px;
+}
+.btn-one {
+  text-decoration: none;
+  padding: .5em .5em;
+  background:brown;
+  color: white;
+  font-weight: 700;
+  border-radius: .25em;
+}
+.btn-two {
+  text-decoration: none;
+  padding: .5em .5em;
+  background:green;
+  color: white;
+  font-weight: 700;
+  border-radius: .25em;
+}
 
 /* /ITEMS */
 .items-index {
