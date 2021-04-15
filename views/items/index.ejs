@@ -5,31 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="css/heroic-features.css" rel="stylesheet">
-    <link rel="stylesheet" href="/icofont/icofont.min.css">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Marketplace</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link href="css/heroic-features.css" rel="stylesheet">
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+   <title>Marketplace</title>
 </head>
 <body class="items-index">
-  <h1>TESTing Icon<i class="icofont-fruits"></i></h1>
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Test</i></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-  </ul>
-  <header class="app-header">
-      <h1>CropMart</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
+      <div class="container-fluid custom">
+        <a class="navbar-brand" href="#"><h1><i class="material-icons store-icon">storefront
+        </i>CropMart</h1></a>
+        <button class="navbar-toggler toggle-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Shop Produce</a>
+          <a class="nav-link" href="#">Sell Local</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="material-icons cart-icon">
+shopping_cart
+          </i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <header class="data-header">
+      <h1>Recently Added Produce</h1>
     </header>
-    <div class="container">
+    <div class="data-container">
+        <table>
+        <thead>
+            <tr>
+                <th class="list-title col"><h4>Produce Type</h4></th>
+                <th class="list-title col"><h4>Produce Name</h4></th>
+                <th class="list-title col"><h4>Stock Availability</h4></th>
+                <th class="list-title col"><h4>Pricing (/ LB) </h4></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% items.forEach(function(i) { %>
+                <tr>
+                    <td><%= i.itemType %></td>
+                    <td><%= i.name %> </td>
+                    <td><%= i.quantity %> </td>
+                    <td><%= i.price %> </td>
+                    <td><a href="/items/<%=i._id %>">Details</a></td>
+                    <td><form action="/items/<%=i._id %>?_method=DELETE" class="delete-form" method="POST"><button type="submit">↪</button></form></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+
+
+
+
     <!-- Jumbotron Header -->
     <h3>image goes here w/ title text plus logo?</h3>
       <!-- <header class="jumbotron my-4">
@@ -66,7 +100,7 @@
           </div>
         </div>
       </div>
-
+      
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/500x325" alt="">
@@ -109,7 +143,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- <h1>Fresh Produce</h1>
+    <h1>Fresh Produce</h1>
     <p>Here are our fruits and vegetables for display!</p>
     <h3>Fruits</h3>
     <div class="container fruits">
@@ -191,30 +225,12 @@
           </div>
       </div>
     </div>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <br>
-    <table>
-        <thead>
-            <tr>
-                <th class="list-title col"><h4>Produce Type</h4></th>
-                <th class="list-title col"><h4>Produce Name</h4></th>
-                <th class="list-title col"><h4>Stock Availability</h4></th>
-                <th class="list-title col"><h4>Pricing (/ LB) </h4></th>
-            </tr>
-        </thead>
-        <tbody>
-            <h2 id="rec-add">Recently Added</h2>
-            <% items.forEach(function(i) { %>
-                <tr>
-                    <td><%= i.itemType %></td>
-                    <td><%= i.name %> </td>
-                    <td><%= i.quantity %> </td>
-                    <td><%= i.price %> </td>
-                    <td><a href="/items/<%=i._id %>">Details</a></td>
-                    <td><form action="/items/<%=i._id %>?_method=DELETE" class="delete-form" method="POST"><button type="submit">↪</button></form></td>
-                </tr>
-            <% }); %>
-        </tbody>
-    </table> -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
