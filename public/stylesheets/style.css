@@ -1,59 +1,44 @@
 /* /LANDING */
 
-.main-index {
-  background-image: url('https://i.imgur.com/LxAREBv.jpg');
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.navbar a {
-  color: #FFAA70;
-  border: 3px solid #8d9a37;
-  margin-right: 80px;
-  margin-top: 20px;
-  font-size: 18px;
-}
-.nav-link:hover {
-    color: rgb(198, 181, 56);
-    border: 3px solid #e4dfdc;
-}
- nav img {
-  margin-left: 50px;
-  margin-right: 300px;
-}
-
-.navbar {
-  margin: 15px;
- border: 3px solid #e1ded6;
-}
-
-.app-title {
-  color:rgb(120, 200, 96);
-}
-.main-index .lwr-contain {
-  margin-top: 180px;
-  margin-left: 100px;
-  background-color:#202529;
-  border: 3px solid #e4dfdc;
-  box-shadow: 11px 12px 10px -2px rgba(65, 65, 64, 0.93);
--webkit-box-shadow: 11px 10px 10px -2px rgba(116, 114, 112, 0.93);
--moz-box-shadow: 11px 16px 10px -2px rgba(65, 65, 64, 0.93);
-}
-#index-blurb  {
-  color: #8d9a37;
-  margin-bottom: 30px;
-  margin-right: 40px;
-}
-#index-desc {
-  color: white;
-}
-#index-desc strong {
-  color: yellow;
-}
 
 
 /* /ITEMS */
+.items-index {
+  background-color: rgb(152, 152, 148);
+}
+.custom {
+  background-color: hsl(23, 76%, 45%);
+}
+.navbar-brand h1 {
+  padding-bottom: 10px;
+font-size: 52px;
+font-family: 'Berkshire Swash', cursive;
+margin-right: 40px;
+margin-left: 30px;
+color: rgb(244, 244, 243);
+}
+.store-icon {
+  position: relative;
+  top: 10px;
+  font-size: 52px;
+  margin-right: 10px;
+   color: rgb(249, 246, 245);
+}
+.items-index .nav-link {
+  margin-right: 40px;
+}
+.cart-icon {
+  color: #f9f9f9;
+  font-size: 42px;
+}
 
+.items-index .toggle-border{
+  color: #f9f9f9;
+  border: 7px double rgb(242, 238, 235);
+}
+.toggle {
+  background-color: red;
+}
 .app-header {
   margin: 10% 0 0 0;
   text-align: center;
@@ -82,9 +67,9 @@ thead {
   color: rgb(242, 236, 236);
 }
 
-#rec-add {
+.data-header {
   text-align: center;
-  color: rgb(80, 66, 130);
+  color: rgb(243, 242, 247);
   font-size: 28px;
 }
 
@@ -95,3 +80,19 @@ tr td {
   font-weight: 500px;
 }
 
+.btn {
+  color: rgb(249, 244, 244);
+  background-color: #CA5E1C;
+  border: 3px rgb(99, 97, 97) solid;
+}
+.btn:hover {
+  background-color: white;
+  color: #c35612;
+  border: 3px rgb(99, 97, 97) solid;
+}
+
+.custom-footer {
+  background-color: #CA5E1C;
+  height: 80px;
+  font-size: 21px;
+}
